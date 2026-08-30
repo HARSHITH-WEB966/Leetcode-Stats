@@ -2,7 +2,7 @@ class Solution {
     public String minWindow(String s, String t) {
 
         int minSize=Integer.MAX_VALUE;
-        int index=-1;
+        int index=-1; //starting index of the miminum substring
 
         int hash[]=new int[256];
 
@@ -27,6 +27,11 @@ class Solution {
         }
         if(index==-1) return "";
         return s.substring(index,index+minSize);
+
+        //**this is the brute force approach, refer this for basic logic building**
+
+        //int minSize=Integer.MAX_VALUE;
+        //int index=-1;
         // for(int i=0;i<s.length();i++){
         //     int hash[]=new int[256];
         //     for(char ch:t.toCharArray()){
