@@ -18,7 +18,7 @@ class Solution {
             StringBuilder ans=new StringBuilder();
             for(int j=words.size()-1;j>=0;j--){
                 ans.append(words.get(j));
-                if(j!=0) ans.append(" ");
+                if(j!=0) ans.   append(" ");
             }
             return ans.toString();
     }
